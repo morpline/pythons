@@ -3,22 +3,18 @@ print("mopline caesar cipher")
 print("please all lowercase")
 do = input("encode or decode? ")
 what = input("what? ")
-hm = int(input("whats the key "))
-letters = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
-done = ""
+
 def encode ( w , t ) :
-    out = ""
-    for x in range(len(w)):
-        l = w[x]
-        if letters.__contains__(l) :
-            h = letters.index(l)+t
-            if h > len(letters)-2:
-                h-=len(letters)
-            s = letters[h]
-            out+=s
-        else:
-            out+=l
-    return out
+    ei = 1
+    i = 1
+    words = []
+    toencrypt = ""
+    oi = 1
+    wi = 1
+    pso = []
+    
+
+
 def decode ( w , t ) :
     out = ""
     for x in range(len(w)):
